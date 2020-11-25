@@ -45,6 +45,11 @@ matrix:
         - python: 'nightly'
         - python: 'pypy3'
   
+    fast_finish: true
+
+cache:
+    pip: true
+ 
  #before install run ppc jobs:
  
         - python: '2.7'
