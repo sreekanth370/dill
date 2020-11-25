@@ -48,8 +48,8 @@ matrix:
  #before install run ppc jobs:
  
         - python: '2.7'
-               arch: ppc64le
-               env:
+          arch: ppc64le
+          env:
                  - COVERAGE="true"
                  - NUMPY="true"
          
