@@ -72,7 +72,7 @@ cache:
           env:
 
         - python: '3.8'
-         arch: ppc64le
+          arch: ppc64le
           dist: xenial
           env:
 
