@@ -51,50 +51,50 @@ cache:
     pip: true
  
  #before install run ppc jobs:
- 
         - python: '2.7'
           arch: ppc64le
           env:
             - COVERAGE="true"
             - NUMPY="true"
-         
+
         - python: '3.5'
           arch: ppc64le
           env:
             - COVERAGE="true"
-       
+
         - python: '3.6'
           arch: ppc64le
           env:
-       
+
         - python: '3.7'
           arch: ppc64le
           dist: xenial
           env:
-      
+
         - python: '3.8'
+         arch: ppc64le
+          dist: xenial
+          env:
+
+        - python: '3.9'
           arch: ppc64le
           dist: xenial
-      
-        - python: '3.9'
-          arch: ppc64le 
-          dist: xenial
+          env:
 
-       
         - python: '3.10-dev'
           arch: ppc64le
           dist: xenial
           env:
-       
+
         - python: 'nightly'
           arch: ppc64le
           dist: xenial
           env:
-       
+
         - python: 'pypy'
           arch: ppc64le
           env:
-        
+
         - python: 'pypy3'
           arch: ppc64le
           env:
@@ -105,13 +105,13 @@ cache:
         - python: 'nightly'
           arch: ppc64le
         - python: 'pypy3'
-          arch: ppc64le
-
+          arch: ppc64le 
+  
     fast_finish: true
 
 cache:
     pip: true
-
+ 
 before_install:
     - set -e  # fail on any error
     - if [[ $COVERAGE == "true" ]]; then pip install coverage; fi
