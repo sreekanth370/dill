@@ -46,8 +46,7 @@ matrix:
         - python: 'pypy3'
   
  #before install run ppc jobs:
- matrix:
-     include:
+ 
         - python: '2.7'
                arch: ppc64le
                env:
