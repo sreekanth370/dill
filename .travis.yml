@@ -98,7 +98,9 @@ matrix:
         - python: '3.10-dev'
           arch: ppc64le
         - python: 'nightly'
+          arch: ppc64le
         - python: 'pypy3'
+          arch: ppc64le
 
     fast_finish: true
 
