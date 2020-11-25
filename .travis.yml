@@ -69,7 +69,7 @@ matrix:
       
         - python: '3.8'
           arch: ppc64le
-          dist: xeniav:
+          dist: xenial
       
         - python: '3.9'
           arch: ppc64le 
