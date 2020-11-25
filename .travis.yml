@@ -50,8 +50,8 @@ matrix:
         - python: '2.7'
           arch: ppc64le
           env:
-                 - COVERAGE="true"
-                 - NUMPY="true"
+            - COVERAGE="true"
+            - NUMPY="true"
          
         - python: '3.5'
           arch: ppc64le
